@@ -73,7 +73,7 @@ const FoodDetails: React.FC = () => {
 
   useEffect(() => {
     async function loadFood(): Promise<void> {
-      const response = await api.get(`/food/${routeParams.id}`);
+      const response = await api.get(`/foods/${routeParams.id}`);
 
       setFood({
         ...response.data,
